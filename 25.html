@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .a {
+            border: 3px solid red;
+            width: 200px;
+            height: 100px;
+            margin: 10px 10px;
+            display: inline-block;
+        }
+
+        .alpha {
+            border: solid aqua;
+            height: 4000px;
+            background-color: blueviolet;
+
+        }
+
+        #box3 {
+            /* position: absolute; */
+            background-color: white;
+            /* top: 54px;
+    left: 54px; */
+            position: fixed;
+            right: 675px;
+        }
+
+        #box2 {
+            position: fixed;
+            right: 27px;
+            background-color: greenyellow;
+        }
+
+        #box1 {
+            background-color: deepskyblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="alpha">
+        <p class="a" id="box1">1</p>
+        <p class="a" id="box2">2</p>
+        <p class="a" id="box3">3</p>
+    </div>
+
+
+</body>
+
+</html>

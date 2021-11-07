@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(102, 154, 202);
+        }
+
+        #container {
+            background-color: rgb(173, 190, 216);
+            width: 800px;
+            height: 2000px;
+            position: relative;
+            top: 50px;
+            left: 550px;
+        }
+
+        #heading {
+            margin: 10px 10px;
+            padding: 10px 10px;
+            text-align: center;
+        }
+
+        #para {
+            margin: 10px 10px;
+            padding: 10px 10px;
+            position: relative;
+            top: 10px;
+            text-align: center;
+        }
+
+        #namelabel {
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        #emaillabel {
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        #agelabel {
+            margin: 10px 10px;
+            padding: 10px 10px;
+            /* border-radius: 20px; */
+        }
+
+        #namelength {
+            padding: 10px 150px;
+            border-radius: 11px;
+            font-weight: bold;
+            background-color: rgb(231, 238, 241);
+
+
+        }
+
+        #emaillength {
+            padding: 10px 150px;
+            border-radius: 11px;
+            background-color: rgb(231, 238, 241);
+        }
+
+        #agelength {
+            padding: 10px 205px;
+            border-radius: 11px;
+            background-color: rgb(231, 238, 241);
+        }
+
+        #headingt {
+            padding: 10px 10px;
+            margin: 10px 10px;
+        }
+
+        #role {
+            margin: -15px 20px;
+            padding: 11px 170px;
+            border-radius: 11px;
+            background-color: rgb(231, 238, 241);
+        }
+
+        #heading3 {
+
+
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        .service {
+            margin: 10px 10px;
+            padding: 10px 10px;
+            zoom: 1.5;
+
+        }
+
+        #font {
+
+            font-size: 30px;
+        }
+
+        #heading4 {
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        #dubblerole {
+            margin: -5px 5px;
+            padding: 12px 180px;
+            border-radius: 25px;
+            background-color: rgb(231, 238, 241);
+        }
+
+        #heading5 {
+            margin: 10px 10px;
+            padding: 10px 10px;
+            font-size: 21px;
+        }
+
+        .alpha {
+            display: flex;
+            margin: 10px 10px;
+            padding: 10px 10px;
+            zoom: 1.5;
+        }
+
+        #comments {
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+
+        input[type=checkbox] {
+            font-size: 10px;
+            /* size: 100px; */
+        }
+
+        #comment {
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(231, 238, 241);
+
+        }
+
+        #buttom {
+            margin: 10px 10px;
+            padding: 10px 10px;
+            text-align: center;
+            position: relative;
+            right: 100px;
+            size: 20px;
+            /* cursor: pointer; */
+            /* width: 1100px; */
+            height: 100px;
+        }
+
+        #bot {
+            cursor: pointer;
+            width: 570px;
+            height: 49px;
+            border-radius: 20px;
+            background-color: royalblue;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <h1 id="heading">Freecodecamp servey form</h1>
+            <h4 id="para">Thank you for taking the time to help us improve the platform</h4>
+        </header>
+        <form id="surveyform">
+            <div id="namelabel">
+                <label for="name">Name</label><br>
+                <input id="namelength" type="text" placeholder="enter your name"><br>
+            </div>
+            <div id="emaillabel">
+                <label for="email">Email</label><br>
+                <input id="emaillength" type="text" placeholder="enter your email"><br>
+            </div>
+            <div id="agelabel">
+                <labelfor="age">age(optional)</label><br>
+                    <input id="agelength" type="number" placeholder=" Age" min="10" max="90">
+            </div>
+            <div>
+                <label>
+                    <h2 id="headingt">Which option best describes your current role?</h2>
+                </label>
+                <select name="role" id="role">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">student</option>
+                    <option value="job">job offer</option>
+                    <option value="">bank offer</option>
+                    <option value="">employee</option>
+                </select>
+            </div>
+            <div id="heading3">
+                <h2>Would you recommend freeCodeCamp to a friend?</h2>
+                <header id="font">
+                    <input class="service" type="radio" name="rahul">Definitely.<br>
+                    <input class="service" type="radio" name="rahul">May be.<br>
+                    <input class="service" type="radio" name="rahul">Not sure.<br>
+                </header>
+            </div>
+            <div id="heading4">
+                <label>
+                    <h2>What is your favorite feature of freeCodeCamp?</h2>
+                </label>
+                <select id="dubblerole" name="double role">
+                    <option disabled selected value>select an option</option>
+                    <option>challengs</option>
+                    <option>projects</option>
+                    <option>community</option>
+                    <option>opensource</option>
+                </select>
+            </div>
+            <div id="heading5">
+                <label>
+                    <h2>What would you like to see improved? (Check all that apply)</h2>
+                </label>
+                <input type="checkbox" class="alpha">Front-end-projects
+                <input type="checkbox" class="alpha"> Back-end-projects
+                <input type="checkbox" class="alpha"> Full stack developer
+                <input type="checkbox" class="alpha"> Audio
+                <input type="checkbox" class="alpha"> Video
+                <input type="checkbox" class="alpha"> Open source code
+                <input type="checkbox" class="alpha"> Freecode camp
+                <input type="checkbox" class="alpha"> Cumminity
+            </div>
+            <div id="comments">
+                <label>
+                    <h2>Any comments or suggestions?</h2>
+                </label>
+                <textarea name="" id="comment" cols="80" rows="7">Enter your comment</textarea>
+            </div>
+            <div id="buttom">
+                <button id="bot">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
